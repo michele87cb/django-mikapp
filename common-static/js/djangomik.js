@@ -10,6 +10,7 @@ window.onerror = function(msg, url, line, col, error) {
 
    // You can view the information in an alert to see things working like this:
    notify_show(msg,"error");
+    console.log('Errore javascript: ' + msg);
 
    var suppressErrorAlert = true;
    // If you return true, then error alerts (like in older versions of
@@ -19,7 +20,7 @@ window.onerror = function(msg, url, line, col, error) {
 
 function navmenu_www(pyfunz){
     try{
-        var content = $('#pageContent').load(pyfunz);
+        $('#pageContent').load(pyfunz);
     }
     catch(e){
         alert_www('Errore di eccezione',e.message);

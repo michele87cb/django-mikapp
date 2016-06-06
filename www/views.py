@@ -10,6 +10,4 @@ def home(request):
 
 
 def about(request):
-    if request.is_ajax():
-        return HttpResponse('CIAOOOOOOO')
     return render(request, "about.html")

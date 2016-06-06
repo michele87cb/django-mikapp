@@ -71,6 +71,10 @@
 {% block main_header %}
     {% include 'header.html' %}
 {% endblock %}
+    <div id="hiddenContent">
+        {% block hidden_content %}
+        {% endblock %}
+    </div>
     <div id="pageContent">
         {% block content %}
         {% endblock %}
