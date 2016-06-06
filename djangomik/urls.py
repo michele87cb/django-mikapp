@@ -17,7 +17,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^', include('www.urls')),
     url(r'^blog/', include('blog.urls')),
-    url(r'^mikapp/', include('mikapp.urls')),
-    url(r'^admin/', admin.site.urls),
+    url(r'^www/', include('www.urls')),
+    url(r'^_admin/', admin.site.urls),
+    url(r'^administrator/', include('administrator.urls')),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login',
+        {'template_name': 'admin/login.html'}),
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
 ]

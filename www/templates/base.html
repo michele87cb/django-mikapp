@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<!doctype html>
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>Automotive Car Dealership &amp; Business HTML Template</title>
+<!-- Bootstrap core CSS -->
+<link href="{% static 'plugins/bootstrap4/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yellowtail%7COpen%20Sans%3A400%2C300%2C600%2C700%2C800" media="screen" />
+<!-- Custom styles for this template -->
+<link href="{% static 'plugins/fontawesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="{%  static 'plugins/flexslider/css/flexslider.css' %}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{%  static 'plugins/bxslider/css/jquery.bxslider.css' %}" type="text/css" media="screen" />
+<link href="{%  static 'plugins/fancybox/css/jquery.fancybox.css' %}" rel="stylesheet">
+<link href="{%  static 'plugins/selectbox/css/jquery.selectbox.css' %}" rel="stylesheet">
+    <link href="{%  static 'plugins/tether/css/tether.min.css' %}" rel="stylesheet">
+
+<link href="{% static 'css/style_www.css' %}" rel="stylesheet">
+<link href="{% static 'css/mobile_www.css' %}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/revoslider/css/settings.css' %}" media="screen" />
+<link href="{%  static 'plugins/animate/animate.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/ts.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'plugins/jquery-confirm/jquery-confirm.min.css' %}" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/tether/js/tether.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap4/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key&amp;sensor=false"></script>
+
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/jquery.themepunch.tools.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+            (Load Extensions only on Local File Systems !
+            The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/revoslider/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+<!-- Twitter Feed Scripts
+     Uncomment to activate
+
+<script type="text/javascript" src="js/twitter/jquery.tweet.js"></script>
+<script type="text/javascript" src="js/twitter/twitter_feed.js"></script> -->
+
+</head>
+
+<body>
+{% block main_header %}
+    {% include 'header.html' %}
+{% endblock %}
+    <div id="pageContent">
+        {% block content %}
+        {% endblock %}
+    </div>
+{% block main_footer %}
+    {% include 'footer.html' %}
+{% endblock %}
+{% block js_after %}
+    <script type="text/javascript" src="{% static 'plugins/jquery-confirm/jquery-confirm.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/notifyjs/notify.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/djangomik.js' %}"></script>
+{% endblock %}
+</body>
+</html>

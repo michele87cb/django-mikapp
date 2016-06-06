@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1b079590-295e-4805-8d5f-01ea3a7dd003" name="OVH" url="http://51.254.128.47">
+        <fileTransfer host="51.254.128.47" port="22" rootFolder="/var/www/" accessType="SFTP" password="dfc7dfc3dfc9dfc2df9cdf9edf98df9edf8b" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
